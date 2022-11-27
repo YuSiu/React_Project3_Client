@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
+import CourseService from "../services/auth.service";
+import { Link } from "react-router-dom";
 
 function DataFetching() {
     const [posts, setPosts] = useState([])
@@ -15,6 +17,17 @@ function DataFetching() {
                 console.log(err)
             })
     })
+    let [courseData, setCourseData] = useState(null);
+    useEffect(() => {
+      CourseService.getCourseByName("Article")
+        .then((data) => {
+          console.log(data);
+          setCourseData(data.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }, []);
     return (
         <div className="Home">
           <div>
@@ -29,8 +42,9 @@ function DataFetching() {
                                     <h1>Article{post.id}</h1>
                                     <h4 class="content">By {post.name}</h4>
                                     <br/>
-                                    <div class="content">title: {post.title}</div>
-                                    <div class="content">content: {post.body}</div>
+                                    <div class="content">{post.title}</div>
+                                    <br/>
+                                    <Link to={`/Article/${post.id}`}>next</Link>
                                     <br/>
                                 </div>
                             </li>)
@@ -38,7 +52,6 @@ function DataFetching() {
                     </ul>
                 </div>
                 <br />
-                {/* <Link to="/Article">next</Link> */}
               </div>
             </div>
           </div>
