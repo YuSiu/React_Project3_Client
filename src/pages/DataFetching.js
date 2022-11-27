@@ -44,7 +44,7 @@ function DataFetching() {
                                     <br/>
                                     <div class="content">{post.title}</div>
                                     <br/>
-                                    <Link to={`/Article/${post.id}`}>next</Link>
+                                        <Link to={`/Article/${post.id}`}>next</Link>
                                     <br/>
                                 </div>
                             </li>)

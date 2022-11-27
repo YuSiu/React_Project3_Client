@@ -27,9 +27,11 @@ div.Home div.card-body p {
 }
 div.Home div.card-body a {
   margin: 0rem 1rem 1rem 0.5rem;
-  text-decoration: none;
-  color: black;
+  color: rgb(255, 0, 0);
   font-size: 1.5rem;
+  display: flex;
+  justify-content: right; 
+  align-items: right;
 }
 
 div.article {
@@ -61,4 +63,9 @@ div.article div h1 {
 
 .content{
   margin-left: 10px;
+}
+
+.next{
+  display: flex;
+  justify-content: right; 
 }
