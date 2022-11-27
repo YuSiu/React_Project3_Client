@@ -60,12 +60,3 @@ function DataFetching() {
 }
 
 export default DataFetching
-
-
-// <div>
-{/* <ul>
-    {
-        posts.map(post => <li key={post.id}>{post.id}{post.title}</li>)
-    }
-</ul> */}
-// </div>
