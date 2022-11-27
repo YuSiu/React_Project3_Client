@@ -23,11 +23,18 @@ const Article = () => {
     <div class="container">
       <ul>
           {
-            <div class="square">
+            <div>
                 <h1>Article{articleId}</h1>
                 <h4 class="content">By {posts[articleId-1]?.name}</h4>
                 <br/>
                 <div class="content">{posts[articleId-1]?.body}</div>
+                <br/>
+                <br/>
+                <br/>
+                <p class="picture">
+                  <img src = {posts[articleId-1]?.images} />
+                </p>
+                <br/>
                 <br/>
                 <Link to={`/`}>BACK</Link>
                 <br/>
