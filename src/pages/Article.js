@@ -24,9 +24,9 @@ const Article = () => {
           {
             <div class="square">
                 <h1>Article{articleId}</h1>
-                <h4 class="content">By {posts[articleId]?.name}</h4>
+                <h4 class="content">By {posts[articleId-1]?.name}</h4>
                 <br/>
-                <div class="content">{posts[articleId]?.body}</div>
+                <div class="content">{posts[articleId-1]?.body}</div>
                 <br/>
             </div>
           }
