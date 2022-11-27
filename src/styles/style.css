@@ -42,3 +42,23 @@ div.article {
 div.article div h1 {
   margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */
+
+.square {
+  width: 95%;
+  background-color: rgb(220, 217, 217);
+}
+
+.container{
+  width: 100%;
+  height: auto;
+}
+
+.mid{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.content{
+  margin-left: 10px;
+}

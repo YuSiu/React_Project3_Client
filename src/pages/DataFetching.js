@@ -18,26 +18,25 @@ function DataFetching() {
     return (
         <div className="Home">
           <div>
-            <p>Here's the data we got back from server.</p>
             <div className="card" style={{ width: "18rem" }}>
               <div className="card-body">
-                <h1 className="card-title">Article1</h1>
-                <ul>
-                    {
-                        posts.map(post => <li key={post.id}>
-                            {post.id}
-                            <br/>
-                                name: {post.name}
-                            <br/>
-                                title: {post.title}
-                            <br/>
-                                content: {post.body}
-
-                            <br/>
-                            <br/>
-                        </li>)
-                    }
-                </ul>
+                <h2 class="mid">Here's the data we got back from server</h2>
+                <div class="container">
+                    <ul>
+                        {
+                            posts.map(post => <li key={post.id}>
+                                <div class="square">
+                                    <h1>Article{post.id}</h1>
+                                    <h4 class="content">By {post.name}</h4>
+                                    <br/>
+                                    <div class="content">title: {post.title}</div>
+                                    <div class="content">content: {post.body}</div>
+                                    <br/>
+                                </div>
+                            </li>)
+                        }
+                    </ul>
+                </div>
                 <br />
                 {/* <Link to="/Article">next</Link> */}
               </div>
