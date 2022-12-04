@@ -63,6 +63,7 @@ div.article div h1 {
 
 .content{
   margin-left: 10px;
+  width: 60%;
 }
 
 .next{
@@ -71,7 +72,49 @@ div.article div h1 {
 }
 
 .picture{
+  padding-left: 10rem;
+}
+
+.comment-title{
+  margin-top: -24rem;
+  margin-left: 62rem;
+  margin-right: 1rem;
+}
+.comment{
+  margin-top: 1rem;
+  margin-left: 60rem;
+  margin-right: 1rem;
+  border-style: solid;
+}
+.outborder{
+  width: 100%;
+  border: 2px solid;
+  padding: 5px;
+}
+.commentName{
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: right; 
+}
+
+.btn{
+  margin-left: 10px;
+}
+
+.image{
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 30px;
+}
+.image2{
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 30px;
+}
+
+.likeCount{
+  margin-left: 22px;
+}
+.commentCount{
+  margin-left: 60px;
+  margin-top: -18px;
 }

@@ -36,15 +36,17 @@ const Article = () => {
                 <br/><br/>
 
                 {/* --------comment-------- */}
-                <h1 className="comment-title">Comment</h1>
+                <h1 className="comment-title">Likes</h1>
                 <div class="comment">
                   <div class="outborder">
+                    <img src={"../people_icon.png"} className="image2" alt="" />
                     {posts[articleId-1]?.comment1}
                     <div class="commentName">By {posts[articleId-1]?.comment1name}</div>
                   </div>
                 </div>
                 <div class="comment">
                   <div class="outborder">
+                    <img src={"../people_icon.png"} className="image2" alt="" />
                     {posts[articleId-1]?.comment2}
                     <div class="commentName">By {posts[articleId-1]?.comment2name}</div>
                   </div>
