@@ -31,7 +31,7 @@ const Article = () => {
                 <div class="content">{posts[articleId-1]?.body}</div>
                 <br/><br/><br/>
                 <p class="picture">
-                  <img src = {posts[articleId-1]?.images} />
+                  <img src = {posts[articleId-1]?.images}  alt="" />
                 </p>
                 <br/><br/>
 
