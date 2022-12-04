@@ -8,7 +8,7 @@ function DataFetching() {
 
     useEffect(() => {
         axios
-            .get('http://localhost:3500')
+            .get('https://reactproject3server-production.up.railway.app/')
             .then(res => {
                 console.log(res)
             setPosts(res.data)
